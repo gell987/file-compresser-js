@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file-compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAB/CAMAAABrAPj5AAAAYFBMVEX///8AsPAArvB0xfQAq+8Aqe+94vny+/4psPD3/f8ftPHd8PzT7PsApu7j8/zt9/2S0fbH5/o6uPGq2/hqwvOMzvZTvPJ8yvSc1Pc6tPFMuPG33vii2fdfwvOX1fZvx/RfsQYjAAADLklEQVR4nO2aaZOCMAxAbW1VzkK5PHbX//8vF4/d9cA1saHFmbxPjiPwDGlJU2YzhmEYhmEYhmEYhmEYhmEYhgnPMk/TNDehNTBE+aKxUskTtinzKLQSBFPVQivxh9KirpahtZ6RNyspxS1SrrpJJ41ZK3VnfY67KqYb9XL1SPuobhehBYeJuv+0D2TFFEepqZ9590FvQ1vek2yee/ej1OahRW8w2/u5ZNA8nla2QL0PMZ+U+R6SJ2fz/eEAY8wUZsc13LsfobVVWaZ1lqm+HEhC3oB8hfDuY/73Sem4rsKpt9AEH/wbUhWByoESkyhDqPgrhHdUuwT8HPZt6l88cQ340VzuvIs/LVFgqMa3OI23ELrxO704D81fVOFVvHAfmj9kXgv2OZ24WCX+vE1L5+21Xs83UCnInfGYLAk0mikopzbeasYUluJ6NzMDfYs7pLeQp6DZUFUz2M2R3rIclCq6O/62zAA/9fIUMsmug4SxPtt8AG6PtW1dLJIxK91FZzMNyVv7awGra/r1hWqLkerFqIohg+3IRUsCvOY49HnLEdJmYcEliiovjltaxINWf1JHPWrA0Ra6ujoUtT6V8oPUO2/hFeFdmV2iahvdET6RcnD3p4/Z593hkKnl4o/XZIluYoT3duAERRjzCFPHDtepc5z5mkZ8rRHXHK6vI8QY6dHl4FmQLDHe1YOT5PBJ6cCGQnwPv+RDb0QxfDoRQbIkMfxy//UbYEXlGbl1r1wwM0J8RFxX2MvT1xYeAEGS5fiVsb4Rf6WbMfA0QGIAFfUI4kK5iu/wlyURl659ixe6PzTirktRxGRIK+5aJb7QtqIRd+38v9DDn4Z4sIi7psrbDs7Fu06H0bs+gGaoEoNM/LSN7gRuwUglrt3bFIiylk5ctgRLffS8QiFOsQcaYS/ci0cXGPyEOtgqwIOeEVfXoL0fLbnREO0kw70fL12ROL3lgffuqLyxbZHJeB9e9PBmrom3ySvhJV3UhnwTLm0hmyhuSF2P8XplWYtRE0bF+7HeCk2/4kz/vJhPitKZrUZ9ISFKq2Y/J2ZfjCvNMAzDMAzDMAzDMAzDMMwLfAMXuyzlaNj2QgAAAABJRU5ErkJggg=="/>
+        <p>
+            browse your files
+        </p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="column width">
+                  <label>Width</label>
+                  <input type="number">
+                </div>
+                <div class="column height">
+                  <label>Height</label>
+                  <input type="number">
+                </div>
+              </div>
+              <div class="row checkboxes">
+                <div class="column ratio">
+                  <input type="checkbox" id="ratio" checked>
+                  <label for="ratio">Lock aspect ratio</label>
+                </div>
+                <div class="column quality">
+                  <input type="checkbox" id="quality">
+                  <label for="quality">Reduce quality</label>
+                </div>
+              </div>
+              <button class="download-btn">Download Image</button>
+        </div>
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
